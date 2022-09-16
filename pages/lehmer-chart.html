@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lehmer Chart</title>
+</head>
+<body>
+<div class="input-container"
+     style="align-content: center; justify-content: center; font-size: 1.2rem; display: flex; margin: 2%">
+    <label for="a" style="margin: 3px">a</label><input id="a" type="number" placeholder="Enter a">
+    <label for="m" style="margin: 3px">m</label><input id="m" type="number" placeholder="Enter m">
+    <label for="R" style="margin: 3px">R</label><input id="R" type="number" placeholder="Enter R">
+    <button onclick="initValues()" style="margin: 3px">Get Result</button>
+</div>
+
+<canvas id="lehmer-chart"></canvas>
+<div class="estimates"
+     style="align-content: center; justify-content: center; font-size: 1.2rem; display: flex; margin: 2%">
+    <h2>Estimates</h2>
+    <ul>
+        <li id="expected-value"></li>
+        <li id="dispersion"></li>
+        <li id="root-mean-square"></li>
+        <li id="hit-frequency"></li>
+        <li id="period"></li>
+        <li id="aperiodicity"></li>
+    </ul>
+</div>
+<script src="../scripts/lehmer-generator.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../scripts/lehmer-chart.js"></script>
+</body>
+</html>
